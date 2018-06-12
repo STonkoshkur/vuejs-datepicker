@@ -20,6 +20,7 @@
       :calendarButtonIconContent="calendarButtonIconContent"
       :disabled="disabled"
       :required="required"
+      :readonly="readonly"
       :bootstrapStyling="bootstrapStyling"
       @showCalendar="showCalendar"
       @closeCalendar="close"
@@ -139,6 +140,10 @@ export default {
     initialView: String,
     disabled: Boolean,
     required: Boolean,
+    readonly: {
+      type: Boolean,
+      default: true
+    },
     typeable: Boolean,
     minimumView: {
       type: String,
